@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UtilityComponent } from './utility/utility.component';
+import { FileParserComponent } from './file-parser/file-parser.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    UtilityComponent
-  ],
+      FileParserComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule

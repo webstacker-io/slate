@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UtilityComponent } from './utility/utility.component';
+import { FileParserComponent } from './file-parser/file-parser.component';
 
 const routes: Routes = [{
-  path: 'utility', component: UtilityComponent
+  path: 'selectFolder', component: FileParserComponent
 },
-{path: '', redirectTo:'utility', pathMatch:'full'}
-
+{path: '', redirectTo:'selectFolder', pathMatch:'full'}
 ];
 
 @NgModule({

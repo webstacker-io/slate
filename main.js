@@ -14,11 +14,9 @@ function createWindow () {
     height: 600,
     backgroundColor: '#ffffff',
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: false,
-      enableRemoteModule: false,
-      contextIsolation: true,
-      sandbox: true
+      nodeIntegration: true,
+        enableRemoteModule: true,
+        contextIsolation: false
     }
   })
 
