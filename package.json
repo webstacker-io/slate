@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build --watch --configuration development && npm run electron:build",
     "test": "ng test",
     "electron": "electron .",
     "electron:build": "ng build --prod && electron ."
@@ -33,6 +33,8 @@
     "@types/node": "^14.14.33",
     "bootstrap": "^5.0.1",
     "electron": "^13.1.2",
+    "electron-reloader": "^1.2.1",
+    "file-system": "^2.2.2",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -40,6 +42,12 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "ngx-electron-plus": "^3.0.8",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "typescript": "~4.2.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }
