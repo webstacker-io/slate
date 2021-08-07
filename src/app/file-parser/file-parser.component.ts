@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fstat } from 'fs';
 import { ElectronAdapterService } from '../services/electron-adapter.service';
-import {  } from 'file-system'
-import * as path from 'path';
 
 @Component({
   selector: 'app-file-parser',
@@ -10,6 +7,8 @@ import * as path from 'path';
   styleUrls: ['./file-parser.component.scss']
 })
 export class FileParserComponent implements OnInit {
+  browseMode = true;
+  
 
   constructor(private electronAdapterService: ElectronAdapterService) { }
 
@@ -24,6 +23,7 @@ export class FileParserComponent implements OnInit {
     let _filePath = result.filePaths;
     console.log(result.filePaths);
     if(result && result.canceled === false){
+      this.browseMode = false;
       if(_filePath.length > 1){
         
       }else if(_filePath.length === 1){

@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container" *ngIf="browseMode">
   <div class="mb-3">
     <input class="form-control" type="file" id="folderContaner" hidden (change)="handleFileInput()" #folderPortal>
     <label class="custom-file-label" for="formFileMultiple" (click)="handleFileInput()">Choose paernt folder of micro-frontends</label>
   </div>
 </div>
+<div class="loader" *ngIf="!browseMode">...Processing the folders</div>

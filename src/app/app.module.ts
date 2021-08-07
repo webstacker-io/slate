@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FileParserComponent } from './file-parser/file-parser.component';
+import { NgTerminalModule } from 'ng-terminal';
 
 @NgModule({
   declarations: [	
@@ -12,7 +13,8 @@ import { FileParserComponent } from './file-parser/file-parser.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgTerminalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
