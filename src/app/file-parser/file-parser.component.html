@@ -1,7 +1,76 @@
-<div class="container" *ngIf="browseMode">
+<!-- <div class="container" *ngIf="browseMode">
   <div class="mb-3">
     <input class="form-control" type="file" id="folderContaner" hidden (change)="handleFileInput()" #folderPortal>
     <label class="custom-file-label" for="formFileMultiple" (click)="handleFileInput()">Choose paernt folder of micro-frontends</label>
   </div>
 </div>
-<div class="loader" *ngIf="!browseMode">...Processing the folders</div>
+<div class="loader" *ngIf="!browseMode">...Processing the folders</div> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-1 bg-body rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Slate</a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div> -->
+  </div>
+</nav>
+ <div class="container-fluid min-vh-100 d-flex flex-column">
+  <div class="row">
+      
+        
+      
+  </div>
+  <div class="row flex-grow-1">
+      <div class="col-4 border p-0 border-top-0">
+        <div class="list-group width-100">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Import the project folder.</h5>
+               <!-- <small class="text-muted">3 days ago</small> -->
+            </div>
+            <p class="mb-1">You have to import the project folder to process. Its time to drop coffee beans to dispenser.</p>
+            <small>You can select one or more folders to drive em up!!!</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Select the command to execute as you wish.</h5>
+              <!-- <small class="text-muted">3 days ago</small> -->
+            </div>
+            <p class="mb-1">How about to select the commands listed here. Its time to select cappuccino or Latte. </p>
+            <small class="text-muted">What you have in the script section of package json file is the key!!!</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Get the project executed as the process or reload the same.</h5>
+              <!-- <small class="text-muted">3 days ago</small> -->
+            </div>
+            <p class="mb-1">Witness the process done. Just sit back and relax with your coffee and get a refill when you really need it.  </p>
+            <small class="text-muted">Hurray, you made it, say goodbye to stacked cmd prompt windows!!!</small>
+          </a>
+        </div>
+      </div>
+      <div class="col-8 border"  *ngIf="browseMode">
+        <div class="d-flex justify-content-between"> 
+            <span class="mb-3">
+              <input class="form-control" type="file" id="folderContaner" hidden  #folderPortal>
+              <label class="custom-file-label" for="formFileMultiple" >Choose paernt folder of micro-frontends</label>
+            </span>
+        </div>
+      </div>
+  </div>
+</div>
