@@ -10,7 +10,7 @@ let win;
 function createWindow () {
 
   win = new BrowserWindow({
-    width: 600,
+    width: 1000,
     height: 600,
     backgroundColor: '#ffffff',
     webPreferences: {
@@ -27,7 +27,7 @@ function createWindow () {
   win.on('closed', function () {
     win = null
   })
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 }
 
 app.on('ready', createWindow);

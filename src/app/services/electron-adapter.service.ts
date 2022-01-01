@@ -13,13 +13,14 @@ export class ElectronAdapterService {
   fs: typeof fs;
   path: typeof path;
   FileSystem: any;
-
+  process: any;
   constructor() { 
-    // this.dialog = (<any>window).require("electron").dialog;
-    // this.remote = (<any>window).require("electron").remote;
-    // this.fs = (<any>window).require("fs");
-    // this.path = (<any>window).require("path");
-    // this.FileSystem = (<any>window).require("file-system");
+    this.dialog = (<any>window).require("electron").dialog;
+    this.remote = (<any>window).require("electron").remote;
+    this.fs = (<any>window).require("fs");
+    this.path = (<any>window).require("path");
+    this.FileSystem = (<any>window).require("file-system");
+    this.process = (<any>window).require("child_process");
   }
 
 }
